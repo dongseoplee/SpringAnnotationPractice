@@ -11,6 +11,7 @@ public class MyMain {
                 System.out.println(m.getName());
                 MyAnnotation annotation = m.getDeclaredAnnotation(MyAnnotation.class);
 
+                //The value varies depending on the method.
                 String value = annotation.value();
                 int number = annotation.number();
                 for(int i = 0; i < number; i++) {

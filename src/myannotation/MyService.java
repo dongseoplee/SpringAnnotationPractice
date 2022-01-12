@@ -6,7 +6,7 @@ public class MyService {
         System.out.println("실행내용1");
     }
 
-    @MyAnnotation("*")
+    @MyAnnotation("*") // @MyAnnotation(value = "*")
     public void method2() {
         System.out.println("실행내용2");
     }
