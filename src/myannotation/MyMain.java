@@ -8,7 +8,7 @@ public class MyMain {
 
         for(Method m : methodList) {
             if(m.isAnnotationPresent(MyAnnotation.class)) {
-                System.out.println(m.getName());
+                System.out.println(m.getName()); //Print method name.
                 MyAnnotation annotation = m.getDeclaredAnnotation(MyAnnotation.class);
 
                 //The value varies depending on the method.
